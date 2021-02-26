@@ -45,7 +45,6 @@
 
 .sidebar .sidebar-menu ul li a{
     display: block;
-    font-size: 18px;
     letter-spacing: 1px;
     text-decoration: none;
     padding-left: 1.5rem;
@@ -95,17 +94,27 @@
 .main-content header h3 .nav-bar{
     display: flex;
     flex-direction: column;
+    justify-content :center;
+    align-items: center;
     cursor: pointer;
     margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    transition: .4s;
 }
 
-.main-content header h3 span{
+.main-content header h3 .nav-bar:hover{
+    background: rgba(0,0,0,.1);
+}
+
+.main-content header h3 .nav-bar span{
     padding-right: 10px;
-    width: 25px;
-    height: 2px;
+    width: 20px;
+    height: 3px;
     background: var(--black);
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .main-content header .right-menu ul li{
@@ -115,7 +124,7 @@
     align-items: center;
 }
 
-.main-content header .right-menu ul li h3{
+.main-content header .right-menu ul li h4{
     letter-spacing: 1px;
     margin-right: 15px;
 }
@@ -170,8 +179,8 @@
 }
 
 .main-content main{
-    margin-top: 64px;
-    min-height: calc(100vh - 64px);
+    margin-top: 61px;
+    min-height: calc(100vh - 61px);
     padding: 20px 20px 10px;
 }
 
