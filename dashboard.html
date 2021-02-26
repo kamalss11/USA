@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="dashboard.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".right-menu li img").click(function(){
+                $(".profile").toggleClass("active");
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2>BRAND</h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="#" class="active"><i class="fa fa-home"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fa fa-table"></i>Table List</a></li>
+                <li><a href="#"><i class="fa fa-table"></i><!--<i class="fa fa-file-csv"></i>-->Uploaded Files</a></li>
+                <li><a href="#"><i class="fa fa-file"></i>All Files</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>Account</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h3>
+                <span class="fa fa-bars"></span>
+                Dashboard
+            </h3>
+
+            <div class="right-menu">
+                <ul>
+                    <li>
+                        <img src="_my_notifications_.svg">
+                        <div class="profile">
+                            <a class="profile-list" href="#">Profile</a>
+                            <a class="profile-list" href="#">Change Password</a>
+                            <a class="profile-list" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="wel">
+                <img src="dashboard.svg">
+                <div class="wel-cnt">
+                    <h2>Hello User</h2>
+                    <p>Welcome to dashboard</p>
+                </div>
+            </div>
+
+            <div class="records">
+                <div class="recds ttl-csv">
+                    <div class="csv">
+                        <p class="no">55</p>
+                        <p>Total CSV files</p>
+                    </div>
+                    <i class="fa fa-file"></i>
+                </div>
+
+                <div class="recds ttl-rec">
+                    <div class="rec">
+                        <p class="no">55</p>
+                        <p>Total records</p>
+                    </div>
+                    <i class="fa fa-file"></i>
+                </div>
+
+                <div class="recds upld-fle">
+                    <form action="">
+                        <input class="file" type="file" name="csv file" value="Upload file">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
