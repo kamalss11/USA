@@ -186,6 +186,7 @@
 .main-content main .records{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .main-content main .records .recds{
@@ -242,7 +243,7 @@
 
 .datas{
     display: flex;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .datas .data{
