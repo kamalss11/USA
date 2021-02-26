@@ -15,7 +15,7 @@
 }
 
 .sidebar{
-    width: 345px;
+    width: 300px;
     position: fixed;
     top: 0;
     left: 0;
@@ -70,7 +70,7 @@
 }
 
 .main-content{
-    margin-left: 345px;
+    margin-left: 300px;
 }
 
 .main-content header{
@@ -81,15 +81,40 @@
     box-shadow: 2px 2px 20px rgba(0,0,0,.3);
     position: fixed;
     top: 0;
-    left: 345px;
-    width: calc(100% - 345px);
+    left: 300px;
+    width: calc(100% - 300px);
     z-index: 100;
 }
 
+.main-content header h3{
+    display: flex;
+    align-items: center;
+}
+
 .main-content header h3 span{
-    font-size: 25px;
     padding-right: 10px;
     cursor: pointer;
+    width: 5px;
+    height: 10px;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    margin-right: 35px;
+    position: relative;
+}
+
+.main-content header h3 span::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 4px;
+    background: var(--black);
+    right: -250%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .main-content header .right-menu ul li{
@@ -129,7 +154,7 @@
     top: -20px;
     right: 15px;
     border: solid 10px;
-    border-color: transparent transparent grey transparent;
+    border-color: transparent transparent var(--black)
     
 }
 
@@ -219,4 +244,69 @@
     font-size: 14px;
     letter-spacing: 1px;
     margin-right: 20px;
+}
+
+.datas{
+    display: flex;
+    margin-top: 50px;
+}
+
+.datas .data{
+    background: var(--white);
+    box-shadow: 0 0 15px rgb(0,0,0,.1);
+    margin: 0 15px;
+}
+
+.datas .data-1{
+    flex-basis: 60%;
+}
+
+.datas .data-2{
+    flex-basis: 40%;
+}
+
+.datas .data .hdr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.datas .data .hdr a button{
+    padding: 5px 15px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.datas .data .hdr a button i{
+    margin-left: 5px;
+    transition: .3s;
+}
+
+.datas .data .hdr a button:hover i{
+    transform: translateX(5px);
+}
+
+.datas .data table{
+    width: 100%;
+    margin-top: 5px;
+    border-collapse: collapse;
+}
+
+.datas .data table tr th{
+    padding: 8px 0;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.datas .data table tr td{
+    text-align: center;
+    padding: 8px 0;
 }
