@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --blue: #5995fd;
+    --white: #fff;
+    --black: #444;
+    --grey: #919393;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar{
+    width: 345px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--blue);
+    z-index: 100;
+}
+
+.sidebar .sidebar-brand{
+    padding: 1rem 0rem 1rem 2rem;
+    color: var(--white);
+}
+
+.sidebar .sidebar-menu{
+    margin-top: 20px;
+}
+
+.sidebar .sidebar-menu ul{
+    width: 100%;
+}
+
+.sidebar .sidebar-menu ul li{
+    max-width: 100%;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+.sidebar .sidebar-menu ul li a{
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding-left: 1.5rem;
+    color: var(--white);
+}
+
+.sidebar .sidebar-menu ul li a:hover{
+    color: var(--black);
+}
+
+.sidebar .sidebar-menu ul li a.active{
+    background: var(--white);
+    color: var(--black);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0 30px 30px 0;
+}
+
+.sidebar .sidebar-menu ul li a i{
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.main-content{
+    margin-left: 345px;
+}
+
+.main-content header{
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    left: 345px;
+    width: calc(100% - 345px);
+    z-index: 100;
+}
+
+.main-content header h3 span{
+    font-size: 25px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.main-content header .right-menu ul li{
+    position: relative;
+    list-style-type: none;
+}
+
+.main-content header .right-menu ul li img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-content header .right-menu ul li .profile{
+    position: absolute;
+    top: 58px;
+    right: 4px;
+    background: var(--white);
+    width: 170px;
+    padding: 10px 0;
+    box-shadow: 0 2px 30px rgba(0,0,0,.2);
+    border-radius: 8px;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.main-content header .right-menu ul li .profile.active{
+    display: block;
+}
+
+.main-content header .right-menu ul li .profile::before{
+    position: absolute;
+    content: '';
+    top: -20px;
+    right: 15px;
+    border: solid 10px;
+    border-color: transparent transparent grey transparent;
+    
+}
+
+.main-content header .right-menu ul li .profile .profile-list{
+    padding: 8px 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.main-content header .right-menu ul li .profile .profile-list:hover{
+    background: var(--blue);
+    color: var(--white);
+}
+
+.main-content main{
+    margin-top: 68px;
+    background: #f1f5fd;
+    min-height: calc(100vh - 68px);
+    padding: 20px 20px 10px;
+}
+
+.main-content main .wel{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.main-content main .wel img{
+    width: 150px;
+    height: 100px;
+}
+
+.main-content main .records{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content main .records .recds{
+    flex-basis: 33.33%;
+    background: var(--white);
+    margin: 0 15px;
+    padding: 35px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+.main-content main .records .recds i{
+    font-size: 45px;
+    color: var(--blue);
+}
+
+.main-content main .records .recds .no{
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.main-content main .records .recds p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--grey);
+}
+
+.main-content main .records .upld-fle{
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+}
+
+.main-content main .records .upld-fle form .file{
+    color: var(--white);
+    font-size: 14px;
+}
+
+.main-content main .records .upld-fle ::-webkit-file-upload-button{
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: var(--white);
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
