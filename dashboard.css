@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
     --blue: #5995fd;
@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif
 }
 
 .sidebar{
@@ -91,30 +91,20 @@
     align-items: center;
 }
 
-.main-content header h3 span{
-    padding-right: 10px;
-    cursor: pointer;
-    width: 5px;
-    height: 10px;
-    border: 1px solid var(--black);
-    border-radius: 50%;
-    display: inline-block;
+.main-content header h3 .nav-bar{
     display: flex;
     flex-direction: column;
-    margin-bottom: 5px;
-    margin-right: 35px;
-    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
 }
 
-.main-content header h3 span::before{
-    position: absolute;
-    content: '';
-    width: 20px;
-    height: 4px;
+.main-content header h3 span{
+    padding-right: 10px;
+    width: 25px;
+    height: 2px;
     background: var(--black);
-    right: -250%;
-    top: 50%;
-    transform: translateY(-50%);
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .main-content header .right-menu ul li{
@@ -187,6 +177,10 @@
 .main-content main .wel img{
     width: 150px;
     height: 100px;
+}
+
+.main-content main .wel .wel-cnt{
+    letter-spacing: 1px;
 }
 
 .main-content main .records{
@@ -298,6 +292,7 @@
     width: 100%;
     margin-top: 5px;
     border-collapse: collapse;
+    letter-spacing: 1px;
 }
 
 .datas .data table tr th{
