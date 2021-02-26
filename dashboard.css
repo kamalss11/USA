@@ -71,14 +71,15 @@
 
 .main-content{
     margin-left: 300px;
+    background: #f1f5fd;
 }
 
 .main-content header{
+    background: #f1f5fd;
     padding: 8px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 2px 2px 20px rgba(0,0,0,.3);
     position: fixed;
     top: 0;
     left: 300px;
@@ -162,9 +163,8 @@
 }
 
 .main-content main{
-    margin-top: 68px;
-    background: #f1f5fd;
-    min-height: calc(100vh - 68px);
+    margin-top: 64px;
+    min-height: calc(100vh - 64px);
     padding: 20px 20px 10px;
 }
 
@@ -186,7 +186,6 @@
 .main-content main .records{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
 }
 
 .main-content main .records .recds{
