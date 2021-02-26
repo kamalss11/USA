@@ -24,6 +24,10 @@
     z-index: 100;
 }
 
+.sidebar.toggle{
+    width: 100px;
+}
+
 .sidebar .sidebar-brand{
     padding: 1rem 0rem 1rem 2rem;
     color: var(--white);
