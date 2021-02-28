@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root{
-    --blue: #5995fd;
     --white: #fff;
     --black: #444;
     --grey: #919393;
@@ -229,10 +228,11 @@ body{
     text-decoration: none;
     display: block;
     font-size: 14px;
+    color: var(--black);
 }
 
 .main-content header .right-menu ul li .profile .profile-list:hover{
-    background: var(--blue);
+    background: var(--sidenav);
     color: var(--white);
 }
 
