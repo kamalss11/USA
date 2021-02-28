@@ -242,160 +242,6 @@ body{
     padding: 20px 20px 10px;
 }
 
-form{
-    margin-top: 50px;
-    display: flex;
-}
-
-form .form{
-    background: var(--white);
-    box-shadow: 0 0 20px rgba(0,0,0,.1);
-    padding: 75px 20px 40px;
-    margin: 0 10px;
-}
-
-form .form .btn{
-    text-align: right;
-}
-
-form .form .btn input[type="submit"]{
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 1px;
-    background: var(--pink);
-    color: var(--white);
-    border-radius: 10px;
-}
-
-form .form-1{
-    position: relative;
-    flex-basis: 60%;
-}
-
-form .form-2{
-    flex-basis: 40%;
-}
-
-form .form-1 .hdr{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: -30px;
-}
-
-form .form-1 .hdr .icon{
-    padding: 25px 30px;
-    background: var(--pink);
-    display: inline-block;
-    color: var(--white);
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0,0,0,.2);
-}
-
-form .form-1 .hdr .icon i{
-    font-size: 25px;
-}
-
-form .form .hdr h4{
-    letter-spacing: 1px;
-    margin: 30px 10px 0;
-}
-
-.form .fields,.form-1 .flx .fields{
-    position: relative;
-    margin: 0 10px;
-}
-
-.form-1 .flx{
-    display: flex;
-}
-
-.form-1 .flx .fields{
-    flex-basis: 100%;
-}
-
-.form .fields input,.form-1 .flx .fields input{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--grey);
-    background: transparent;
-    margin-bottom: 30px;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-.form .fields label,.form-1 .flx .fields label{
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: .5s;
-    pointer-events: none;
-    letter-spacing: 1px;
-    color: var(--grey)
-}
-
-.form .fields input:focus + label,.form .fields input:valid+ label,
-.form-1 .flx .fields input:focus + label,.form-1 .flx .fields input:valid + label{
-    top: -25px;
-    left: -10px;
-    font-size: 15px;
-    color: var(--pink);
-    font-weight: bold;
-}
-
-.form .fields input:focus,.form-2 .fields input:focus{
-    border-color: var(--pink);
-}
-
-.form-2{
-    position: relative;
-}
-
-.form-2 .profile-images{
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.form-2 .profile-images .pro-img{
-    width: 100px;
-    height: 100px;
-    border: 1px solid var(--grey);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--grey);
-    box-shadow:  0 0 20px rgba(0,0,0,.1);
-}
-
-.form-2 .profile-images .pro-img i{
-    font-size: 55px;
-    color: var(--white);
-}
-
-@media(max-width: 1050px){
-    form{
-        flex-wrap: wrap;
-    }
-    
-    form .form{
-        flex-basis: 100%;
-        margin-bottom: 200px;
-    }
-
-    .form-1 .flx{
-        flex-wrap: wrap;
-    }
-}
-
 @media(max-width: 750px){
     .sidebar{
         width: 62px;
@@ -441,7 +287,6 @@ form .form .hdr h4{
     }
 }
 
-
 @media(max-width: 550px){
     .sidebar{
         left: -100%;
@@ -475,11 +320,5 @@ form .form .hdr h4{
 
     .main-content main{
         padding: 20px 10px 10px;
-    }
-}
-
-@media(max-width: 457px){
-    form .form .hdr h4{
-        margin: 35px 10px 0;
     }
 }
