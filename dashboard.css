@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root{
     --blue: #5995fd;
@@ -12,13 +12,15 @@
     --sidenav: linear-gradient(87deg,#172b4d 0,#1a174dc7 100%);/*linear-gradient(87deg,#172b4d 0,#1a174d 100%) #e91e7c #d81b61f2*/
     --rec: #20d5de;
     --dashboardbg: #f3f3f3;
+    --yellow: linear-gradient(60deg,#ffa726,#fb8c00);
+    --vipi: #9c27b0;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Open Sans', sans-serif;
 }
 
 .sidebar{
@@ -341,6 +343,7 @@
     background: var(--white);
     box-shadow: 0 0 15px rgb(0,0,0,.1);
     margin: 0 15px;
+    position: relative;
 }
 
 .datas .data-1{
@@ -354,9 +357,42 @@
 .datas .data .hdr{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    padding: 0 10px;
     letter-spacing: 1px;
+}
+
+.datas .data .hdr .hdr-1,.datas .data .hdr .hdr-2{
+    display: flex;
+}
+
+.datas .data .hdr h4{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.datas .data .hdr .h-d-r .hd{
+    padding: 25px 30px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: var(--white);
+    position: relative;
+    top: -20px;
+}
+
+.datas .data .hdr .h-d-r .d1-hd{
+    background: var(--vipi);
+}
+
+.datas .data .hdr .h-d-r .d2-hd{
+    background: var(--yellow);
+}
+
+.datas .data .hdr .hd i{
+    font-size: 25px;
+}
+
+.datas .data .hdr a{
+    margin-top: 14px;
 }
 
 .datas .data .hdr a button{
@@ -382,7 +418,6 @@
 
 .datas .data table{
     width: 100%;
-    margin-top: 5px;
     border-collapse: collapse;
     letter-spacing: 1px;
     border: 1px solid rgba(0,0,0,.12);
