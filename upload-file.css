@@ -242,6 +242,67 @@ body{
     padding: 20px 20px 10px;
 }
 
+.main-content main .upld-file-img{
+    background: var(--white);
+    padding: 70px 15px 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    margin: 30px 0 50px;
+    position: relative;
+}
+
+.main-content main .upld-file-img .hdr{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+}
+
+.main-content main .upld-file-img .hdr .icon{
+    padding: 25px 30px;
+    background: var(--pink);
+    display: inline-block;
+    color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+
+.main-content main .upld-file-img .hdr h4{
+    margin-top: 30px;
+    margin-left: 15px;
+    letter-spacing: 1px;
+}
+
+.main-content main .upld-file-img .icon i{
+    font-size: 25px;
+}
+
+.main-content main .upld-file-img form .upld{
+    margin-bottom: 20px;
+}
+
+.main-content main .upld-file-img form .upld span{
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-right: 15px;
+}
+
+.main-content main .upld-file-img form .btn{
+    text-align: right;
+}
+
+.main-content main .upld-file-img form .btn input[type="submit"]{
+    padding: 9px 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: var(--pink);
+    color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
 @media(max-width: 750px){
     .sidebar{
         width: 62px;
