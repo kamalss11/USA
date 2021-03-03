@@ -351,7 +351,7 @@ form .form .hdr h4,.change-pass form .hdr h4{
 
 .form .fields input:focus + label,.form .fields input:valid + label,
 .form-1 .flx .fields input:focus + label,.form-1 .flx .fields input:valid + label,
-.change-pass form .fields input:focus + label,.change-pass form .fields input:valid{
+.change-pass form .fields input:focus + label,.change-pass form .fields input:valid + label{
     top: -25px;
     left: -10px;
     font-size: 15px;
