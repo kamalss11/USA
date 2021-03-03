@@ -244,6 +244,18 @@ form{
     display: flex;
 }
 
+.change-pass{
+    margin: 100px 0 80px;
+}
+
+.change-pass form{
+    display: block;
+    background: var(--white);
+    margin: 50px 10px 10px;
+    padding: 90px 20px 30px;
+    position: relative;
+}
+
 form .form{
     background: var(--white);
     box-shadow: 0 0 20px rgba(0,0,0,.1);
@@ -251,11 +263,11 @@ form .form{
     margin: 0 10px;
 }
 
-form .form .btn{
+form .form .btn,.change-pass form .btn{
     text-align: right;
 }
 
-form .form .btn input[type="submit"]{
+form .form .btn input[type="submit"],.change-pass form .btn input[type="submit"]{
     padding: 10px 15px;
     border: none;
     outline: none;
@@ -276,14 +288,14 @@ form .form-2{
     flex-basis: 40%;
 }
 
-form .form-1 .hdr{
+form .form-1 .hdr,.change-pass form .hdr{
     display: flex;
     align-items: center;
     position: absolute;
     top: -30px;
 }
 
-form .form-1 .hdr .icon{
+form .form-1 .hdr .icon,.change-pass form .hdr .icon{
     padding: 25px 30px;
     background: var(--pink);
     display: inline-block;
@@ -292,16 +304,16 @@ form .form-1 .hdr .icon{
     box-shadow: 0 0 20px rgba(0,0,0,.2);
 }
 
-form .form-1 .hdr .icon i{
+form .form-1 .hdr .icon i,.change-pass form .hdr .icon i{
     font-size: 25px;
 }
 
-form .form .hdr h4{
+form .form .hdr h4,.change-pass form .hdr h4{
     letter-spacing: 1px;
     margin: 30px 10px 0;
 }
 
-.form .fields,.form-1 .flx .fields{
+.form .fields,.form-1 .flx .fields,.change-pass form .fields{
     position: relative;
     margin: 0 10px;
 }
@@ -314,7 +326,7 @@ form .form .hdr h4{
     flex-basis: 100%;
 }
 
-.form .fields input,.form-1 .flx .fields input{
+.form .fields input,.form-1 .flx .fields input,.change-pass form .fields input{
     width: 100%;
     padding: 10px;
     border: none;
@@ -326,7 +338,7 @@ form .form .hdr h4{
     letter-spacing: 1px;
 }
 
-.form .fields label,.form-1 .flx .fields label{
+.form .fields label,.form-1 .flx .fields label,.change-pass form .fields label{
     padding: 10px;
     position: absolute;
     top: 0;
@@ -337,8 +349,9 @@ form .form .hdr h4{
     color: var(--grey)
 }
 
-.form .fields input:focus + label,.form .fields input:valid+ label,
-.form-1 .flx .fields input:focus + label,.form-1 .flx .fields input:valid + label{
+.form .fields input:focus + label,.form .fields input:valid + label,
+.form-1 .flx .fields input:focus + label,.form-1 .flx .fields input:valid + label,
+.change-pass form .fields input:focus + label,.change-pass form .fields input:valid{
     top: -25px;
     left: -10px;
     font-size: 15px;
@@ -346,7 +359,7 @@ form .form .hdr h4{
     font-weight: bold;
 }
 
-.form .fields input:focus,.form-2 .fields input:focus{
+.form .fields input:focus,.form-2 .fields input:focus,.change-pass form .fields input:focus{
     border-color: var(--pink);
 }
 
@@ -378,6 +391,11 @@ form .form .hdr h4{
     color: var(--white);
 }
 
+.change-pass form .fields{
+    position: relative;
+    margin: 0 10px;
+}
+
 @media(max-width: 1050px){
     form{
         flex-wrap: wrap;
@@ -385,15 +403,17 @@ form .form .hdr h4{
     
     form .form{
         flex-basis: 100%;
-        margin-bottom: 200px;
+        margin-bottom: 120px;
+    }
+
+    form .form-2{
+        margin-bottom: 80px;
     }
 
     .form-1 .flx{
         flex-wrap: wrap;
     }
 }
-
-
 
 @media(max-width: 750px){
     .sidebar{
