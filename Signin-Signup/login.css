@@ -581,7 +581,7 @@ form.sign-up-form{
 
 @media(max-height: 693px){
     .container .right-panel {
-        transform: translateY(18%);
+        transform: translateY(0);
     }
 
     .container.sign-up-mode form.sign-up-form {
