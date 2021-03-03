@@ -253,6 +253,7 @@ form{
     background: var(--white);
     margin: 50px 10px 10px;
     padding: 90px 20px 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
     position: relative;
 }
 

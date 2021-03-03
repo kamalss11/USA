@@ -277,6 +277,30 @@ body{
     font-size: 25px;
 }
 
+.main-content main .upld-file-img .success,
+.main-content main .upld-file-img .error{
+    letter-spacing: 1px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.main-content main .upld-file-img .success i,
+.main-content main .upld-file-img .error i{
+    margin-right: 10px;
+}
+
+.main-content main .upld-file-img .success{
+    color: var(--green);
+    background: #4caf5033;
+}
+
+.main-content main .upld-file-img .error{
+    color: var(--csv);
+    background: #fd615926;
+}
+
 .main-content main .upld-file-img form .upld{
     margin-bottom: 20px;
 }
