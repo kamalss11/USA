@@ -174,10 +174,8 @@ form .overlay input[type="submit"]{
 }
 
 .alrt{
-    position: absolute;
-    top: 50%;   
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 180px 10px;
+    text-align: center;
 }
 
 .alrt .image{
@@ -205,6 +203,13 @@ form .overlay input[type="submit"]{
 
 .alrt .cntnt p a{
     color: #0c920cf2;
+}
+
+@media(max-width: 550px){
+    .alrt .image img{
+        width: 300px;
+        height: 200px;
+    }
 }
 
 @media(max-width: 500px){
