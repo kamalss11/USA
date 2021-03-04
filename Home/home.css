@@ -56,6 +56,7 @@
 .container nav.sticky{
     padding: 20px 14px;
     background: var(--main);
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
     color: var(--white);
 }
 
@@ -260,6 +261,118 @@
     background: var(--white);
     width: 15px;
     height: 15px;
+}
+
+.wt-we-do{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.wt-we-do h2{
+    display: inline-block;
+    letter-spacing: var(--spacing);
+    padding-left: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.wt-we-do h2::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #172b4d;
+}
+
+.wt-we-do .boxes{
+    display: flex;
+    background: var(--white);
+    padding: 60px 10px;
+    margin: 50px 20px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+.wt-we-do .boxes .box{
+    flex-basis: 50%;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wt-we-do .boxes .content{
+    flex-direction: column;
+}
+
+.wt-we-do .boxes .content p{
+    text-align: justify;
+    letter-spacing: var(--spacing);
+    line-height: 35px;
+    font-size: 17px;
+}
+
+.wt-we-do .boxes .content a{
+    margin-top: 50px;
+    color: var(--white);
+}
+
+.wt-we-do .boxes .content a button{
+    padding: 10px 13px;
+    cursor:  pointer;
+    outline: none;
+    border: 2px solid #172b4d;
+    background: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+
+.wt-we-do .boxes .content a  button::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: var(--main);
+    transition: .5s;
+    z-index: -1
+}
+
+.wt-we-do .boxes .content a  button:hover::before{
+    width: 0;
+}
+
+.wt-we-do .boxes .content a  button:hover{
+    color: var(--main);
+}
+
+.wt-we-do .boxes .content a  button:hover{
+    background: none;
+    color: #172b4d;
+}
+
+.wt-we-do .boxes .image .pic{
+    width: 380px;
+    height: 300px;
+    border: 6px solid #172b4d;
+    position: relative;
+}
+
+.wt-we-do .boxes .image .pic img{
+    width: 380px;
+    height: 300px;
+    filter: brightness(80%);
+    position: absolute;
+    right: -13%;
+    top: -13%;
 }
 
 @media(max-width: 800px){
