@@ -173,6 +173,40 @@ form .overlay input[type="submit"]{
     margin: 10px 0;
 }
 
+.alrt{
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.alrt .image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.alrt .image img{
+    width: 350px;
+    height: 300px;
+}
+
+.alrt .cntnt p{
+    line-height: 35px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.alrt .cntnt p i{
+    color: #0cdb0cf2;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.alrt .cntnt p a{
+    color: #0c920cf2;
+}
+
 @media(max-width: 500px){
     form .overlay .input{
         width: 300px;
