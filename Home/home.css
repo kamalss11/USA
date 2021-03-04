@@ -15,6 +15,29 @@
     --spacing: 1px;
 }
 
+.progress-container {
+    width: 100%;
+    height: 8px;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+  
+.progress-bar {
+    height: 8px;
+    background: var(--main);
+    width: 0%;
+}
+
+.progress-bar.sticky{
+    background: var(--white);
+    height: 5px;
+}
+
+.container {
+    margin-bottom: 1500px;
+}
+
 .container nav{
     display: flex;
     justify-content: space-between;

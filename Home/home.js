@@ -1,12 +1,26 @@
+//  Scroll Indicator
+
+window.onscroll = function() {myFunction()};
+        
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 //  Nav scroll
 
 window.addEventListener("scroll",function(){
     var nav = document.querySelector(".container nav");
+    var bar = document.querySelector(".progress-bar");
     nav.classList.toggle("sticky",window.scrollY > 150);
+    bar.classList.toggle("sticky",window.scrollY > 150);
 
 })
 
 //  nav bar
+
 const nav_bar = document.querySelector(".nav-bars");
 const navmenu = document.querySelector(".menu");
 
