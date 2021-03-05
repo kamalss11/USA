@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Forms" content="Login/Signup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link type="text/css" rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signup-signin">
+                <form action="#" method="POST" class="sign-in-form">
+                    <h1>Sign In</h1>
+                    <div class="input username">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="input password">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+
+                    <a href="forgetpass1.html" class="frgt">Forget Password ?</a>
+
+                    <input type="submit" class="sub" value="LOGIN">
+                </form>
+
+                <form action="#" method="POST" class="sign-up-form">
+                    <h1>Sign Up</h1>
+                    <div class="input username">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="input email">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input password">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+
+                    <input type="submit" class="sub" value="SIGN UP">
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h2>Welcome,</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut repellendus alias quo voluptatibus itaque aspernatur, quisquam ut hic.</p>
+                    <button class="sup-btn" id="sign-up-btn">Sign Up</button>
+                </div>
+                <img src="Mobile_life.svg" class="image">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h2>Welcome,</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut repellendus alias quo voluptatibus itaque aspernatur, quisquam ut hic.</p>
+                    <button class="sin-btn" id="sign-in-btn">Sign In</button>
+                </div>
+                <img src="my_notifications.svg" class="image">
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

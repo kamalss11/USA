@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msg 2</title>
+    <link rel="stylesheet" type="text/css" href="forgetpass.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="brand">
+                <h3>BRAND</h3>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-bars">
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="alrt">
+            <div class="image">
+                <img src="mail_success.svg">
+            </div>
+
+            <div class="cntnt">          
+                <p>
+                    <i class="fas fa-check-circle"></i> 
+                    Your password has been set. You may go ahead and <a href="{% url 'login' %}">Sign in</a> now.
+                </p>
+            </div>
+        </div>
+    </div>
+<script src="forgetpass.js"></script>
+</body>
+</html>
