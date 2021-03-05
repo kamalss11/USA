@@ -428,7 +428,7 @@
 .products .prdts .prd i{
     font-size: 30px;
     margin-bottom: 25px;
-    background: red;
+    background: var(--main);
     width: 70px;
     height: 70px;
     line-height: 70px;
@@ -526,7 +526,6 @@ section p{
 
 .swiper-container .swiper-slide .testimonialbox .quote{
     position: relative;
-    top: -15px;
     left: 5px;
     opacity: .7;
 }
@@ -535,7 +534,7 @@ section p{
     line-height: 30px;
     letter-spacing: 2px;
     font-size: 15px;
-    margin-bottom: 30px;
+    margin: 15px 0 40px;
     font-weight: normal;
 }
 
@@ -584,7 +583,7 @@ section p{
 }
 
 footer{
-    background: var(--main);
+    background: #172b4d;
     color: var(--white);
     padding: 50px 20px;
     display: flex;
