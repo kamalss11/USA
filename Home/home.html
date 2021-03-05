@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -159,6 +160,78 @@
             </div>
         </div>
 
+        <section>
+            <div class="hdr">
+                <h2>Testimonials</h2>
+            </div>
+            <p>What our client says ?</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonialbox">
+                            <img src="left-quote.svg" class="quote">
+                            <div class="testi-cnt">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero eum sunt ex repellendus. Dolor rem accusantium optio voluptates quisquam.</p>
+                                <div class="details">
+                                    <div class="imgbx">
+                                        <img src="f-1.jpg">
+                                    </div>
+                                    <h4>Kamalesh<br><span>Web Developer</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonialbox">
+                            <img src="left-quote.svg" class="quote">
+                            <div class="testi-cnt">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero eum sunt ex repellendus. Dolor rem accusantium optio voluptates quisquam.</p>
+                                <div class="details">
+                                    <div class="imgbx">
+                                        <img src="f-2.jpg">
+                                    </div>
+                                    <h4>Kamalesh<br><span>Web Developer</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonialbox">
+                            <img src="left-quote.svg" class="quote">
+                            <div class="testi-cnt">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero eum sunt ex repellendus. Dolor rem accusantium optio voluptates quisquam.</p>
+                                <div class="details">
+                                    <div class="imgbx">
+                                        <img src="f-3.jpg">
+                                    </div>
+                                    <h4>Kamalesh<br><span>Web Developer</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonialbox">
+                            <img src="left-quote.svg" class="quote">
+                            <div class="testi-cnt">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero eum sunt ex repellendus. Dolor rem accusantium optio voluptates quisquam.</p>
+                                <div class="details">
+                                    <div class="imgbx">
+                                        <img src="f-4.jpg">
+                                    </div>
+                                    <h4>Kamalesh<br><span>Web Developer</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
         <footer>
             <div class="ftr logo">
                 <h2>BRAND</h2>
@@ -188,6 +261,26 @@
         </footer>
     </div>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop: true,
+    });
+</script>
 <script src="home.js"></script>
 </body>
 </html>
