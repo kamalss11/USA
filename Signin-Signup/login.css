@@ -66,6 +66,34 @@
     transition: all .2s .9s ease-in-out;
 }
 
+.container .forms-container .signup-signin form .alert{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .forms-container .signup-signin form .alert p{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    border-radius: 5px; 
+}
+
+.container .forms-container .signup-signin form .alert p i{
+    margin-right: 10px;
+}
+
+.container .forms-container .signup-signin form .alert .success{
+    color: #4caf50;
+    background: #4caf5033;
+}
+
+.container .forms-container .signup-signin form .alert .error{
+    color: #fd6159;
+    background: #fd615926;
+}
+
 .container .forms-container .signup-signin form .frgt{
     text-decoration: none;
     font-size: 17px;
