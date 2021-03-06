@@ -40,6 +40,20 @@
     margin: 0 25px;
 }
 
+.sidebar .sidebar-brand i{
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.sidebar .sidebar-brand h2{
+    letter-spacing: 1px;
+}
+
+.sidebar.toggle .sidebar-brand{
+    margin: 0 5px;
+    padding: 1rem 0 1rem 1rem;
+}
+
 .sidebar .sidebar-brand,.sidebar .name{
     padding: 1rem 0 1rem 1.5rem;
     color: var(--white);
@@ -48,39 +62,91 @@
     align-items: center;
 }
 
-.sidebar.toggle .sidebar-brand,.sidebar.toggle .name{
-    margin: 0 5px;
-    text-align: left;
-    padding: 1rem 0 1rem 1rem;
-}
-
 .sidebar .name{
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 20px;
 }
 
-.sidebar.toggle .name{
-    justify-content: center;
+.sidebar .name:hover{
+    cursor: pointer;
 }
 
-.sidebar .name img{
+.sidebar .name .usr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar .name .usr-icon{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar.toggle .name{
+    padding: 1rem 0 1rem .5rem;
+    margin: 0 5px;
+}
+
+.sidebar .name .usr .usr-icon img{
     width: 38px;
     height: 38px;
     border-radius: 50%;
     margin-right: 25px;
 }
 
-.sidebar .name span{
+.sidebar .name .usr .usr-icon span{
     letter-spacing: 1px;
     color: var(--white);
 }
 
-.sidebar .sidebar-brand i{
-    font-size: 20px;
-    margin-right: 25px;
+.sidebar .name.open .usr i{
+    transform: rotate(180deg);
 }
 
-.sidebar .sidebar-brand h2{
-    letter-spacing: 1px;
+.sidebar .name ul{
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: none;
+}
+
+.sidebar.toggle .name ul{
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar .name.open ul{
+    display: block;
+}
+
+.sidebar .name ul li{
+    list-style: none;
+}
+
+.sidebar .name ul li a{
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.sidebar.toggle .name ul li a{
+    justify-content: center;
+}
+
+.sidebar .name ul li a span{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.sidebar .name ul li a p{
+    letter-spacing: 2px;
+}
+
+.sidebar.toggle .name ul li a p{
+    display: none;
 }
 
 .sidebar .sidebar-menu{
@@ -133,7 +199,7 @@
     color: var(--black);
 }
 
-.sidebar.toggle .sidebar-menu ul li a p,.sidebar.toggle .name span{
+.sidebar.toggle .sidebar-menu ul li a p,.sidebar.toggle .name .usr .usr-icon span{
     display: none;
 }
 
@@ -498,7 +564,7 @@
         z-index: 500;
     }
 
-    .sidebar .sidebar-brand,.sidebar .name{
+    .sidebar .sidebar-brand{
         padding: 1rem 0 1rem 1rem;
         margin: 0 5px;
     }
@@ -515,24 +581,45 @@
         display: block;
     }
 
-    .sidebar .name span{
-        display: none;
-    }
-
-    .sidebar:hover .name span{
-        display: block;
+    .sidebar:hover .sidebar-menu ul li a span{
+        display: inline-block;
     }
 
     .sidebar .name{
-        justify-content: center;
+        padding: 1rem 0 1rem .5rem;
+        margin: 0 5px;
     }
 
-    .sidebar:hover .name{
+    .sidebar .name .usr .usr-icon span {
+        display: none;
+    }
+
+    .sidebar:hover .name .usr .usr-icon span {
+        display: block;
+    }
+
+    .sidebar .name ul{
+        padding-left: 0px;
+    }
+
+    .sidebar:hover .name ul{
+        padding-left: 20px;
+    }
+
+    .sidebar .name ul li a{
+        padding-left: .5rem;    
+    }
+
+    .sidebar:hover .name ul li a {
         justify-content: flex-start;
     }
 
-    .sidebar:hover .sidebar-menu ul li a span{
-        display: inline-block;
+    .sidebar .name ul li a p{
+        display: none;
+    }
+
+    .sidebar:hover .name ul li a p{
+        display: block;
     }
 
     .main-content{
@@ -564,7 +651,15 @@
     }
 
     .sidebar .sidebar-brand{
-        border: none;
+        border-color: #172b4d;
+    }
+
+    .sidebar:hover .sidebar-brand{
+        border-color: var(--grey);
+    }
+
+    .sidebar.toggle .sidebar-brand {
+        margin: 0 15px;
     }
 
     .sidebar.toggle .sidebar-menu ul li{
@@ -575,12 +670,28 @@
         display: inline-block;
     }
 
-    .sidebar.toggle .sidebar-menu ul li a p,.sidebar.toggle .name span{
+    .sidebar.toggle .sidebar-menu ul li a p{
         display: block;
     }
 
-    .sidebar.toggle .name {
+    .sidebar.toggle .name{
+        margin: 0 15px;
+    }
+
+    .sidebar.toggle .name .usr .usr-icon span{
+        display: block;
+    }
+
+    .sidebar.toggle .name ul {
+        padding-left: 20px;
+    }
+    
+    .sidebar.toggle .name ul li a {
         justify-content: flex-start;
+    }
+
+    .sidebar.toggle .name ul li a p {
+        display: block;
     }
 
     .main-content,.main-content.toggle{

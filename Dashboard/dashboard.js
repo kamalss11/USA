@@ -18,3 +18,15 @@ navbar.addEventListener('click',() => {
         main_hdr.classList.remove("toggle");
     }
 })
+
+const pro = document.querySelector(".name");
+const pro_li = document.querySelector(".name ul")
+
+pro.addEventListener('click',()=>{
+    if(!pro.classList.contains("open")){
+        pro.classList.add("open");
+    }
+    else{
+        pro.classList.remove("open");
+    }
+})
