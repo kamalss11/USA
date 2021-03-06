@@ -121,13 +121,7 @@ body{
 .sidebar .name ul{
     width: 100%;
     margin-top: 20px;
-    padding-left: 20px;
     display: none;
-}
-
-.sidebar.toggle .name ul{
-    padding: 0;
-    text-align: center;
 }
 
 .sidebar .name.open ul{
@@ -136,6 +130,7 @@ body{
 
 .sidebar .name ul li{
     list-style: none;
+    margin-bottom: 20px;
 }
 
 .sidebar .name ul li a{
@@ -298,7 +293,7 @@ body{
     top: 58px;
     right: 4px;
     background: var(--white);
-    width: 170px;
+    width: 190px;
     padding: 10px 0;
     box-shadow: 0 2px 30px rgba(0,0,0,.2);
     border-radius: 8px;
@@ -328,6 +323,12 @@ body{
     display: block;
     font-size: 14px;
     color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+.main-content header .right-menu ul li .profile .profile-list span{
+    margin-right: 15px;
 }
 
 .main-content header .right-menu ul li .profile .profile-list:hover{
@@ -438,14 +439,6 @@ body{
         display: block;
     }
 
-    .sidebar .name ul{
-        padding-left: 0px;
-    }
-
-    .sidebar:hover .name ul{
-        padding-left: 20px;
-    }
-
     .sidebar .name ul li a{
         padding-left: .5rem;    
     }
@@ -522,10 +515,6 @@ body{
         display: block;
     }
 
-    .sidebar.toggle .name ul {
-        padding-left: 20px;
-    }
-    
     .sidebar.toggle .name ul li a {
         justify-content: flex-start;
     }
