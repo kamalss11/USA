@@ -4,15 +4,16 @@
     --white: #fff;
     --black: #444;
     --grey: #919393;
-    --green: #4caf50;
+    --green: linear-gradient(-45deg, #209077 0%, #1ae28a 100%);
     --pink: #e91e63;
     --violet: #694caf;
-    --csv: #fd6159;
+    --csv: linear-gradient(87deg,#f5365c 0,#f56036 100%);/*#fd6159*/
     --sidenav: linear-gradient(87deg,#172b4d 0,#1a174dc7 100%);/*linear-gradient(87deg,#172b4d 0,#1a174d 100%) #e91e7c #d81b61f2*/
-    --rec: #20d5de;
+    --rec: linear-gradient(87deg,#11cdef 0,#1171ef 100%); /*#20d5de;*/
     --dashboardbg: #f3f3f3;
     --yellow: linear-gradient(60deg,#ffa726,#fb8c00);
-    --vipi: #9c27b0;
+    --vipi: linear-gradient(90deg,#0c2646 0,#204065 60%,#2a5788);/*linear-gradient(-45deg, rgba(147,26,222,0.83) 0%, rgba(28,206,234,0.82) 100%);*//*#9c27b0*/
+    --time: linear-gradient(87deg,#2dce89 0,#2dcecc 100%);
 }
 
 *{
@@ -28,7 +29,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    background: var(--sidenav);
+    background: var(--vipi);
     z-index: 100;
 }
 
@@ -319,7 +320,7 @@
 }
 
 .main-content header .right-menu ul li .profile .profile-list:hover{
-    background: var(--sidenav);
+    background: var(--vipi);
     color: var(--white);
 }
 
@@ -352,15 +353,26 @@
 .main-content main .records .recds{
     flex-basis: 33.33%;
     background: var(--white);
-    margin: 30px 15px 0;
+    margin: 30px 25px 0;
     padding: 25px 15px 15px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 0 15px rgba(0,0,0,.1);
 }
 
-.main-content main .records .upld-fle{
-    align-items: center;
+.main-content main .records .rec-clock .icon{
+    background: var(--time);
+}
+
+.main-content main .records .rec-clock .clock{
+    display: flex;
+    margin-top: 20px;
+    align-items: baseline;
+}
+
+.main-content main .records .rec-clock .clock h2,.main-content main .records .rec-clock .clock span{
+    margin-right: 10px;
+    letter-spacing: 1px;
 }
 
 .main-content main .records .recds .icon{
@@ -377,11 +389,12 @@
 }
 
 .main-content main .records .recds .icon-csv{
-    background-color: var(--csv);
+    background: var(--csv);
 }
 
+
 .main-content main .records .recds .icon-rec{
-    background-color: var(--rec);
+    background: var(--rec);
 }
 
 .main-content main .records .recds .icon i{
@@ -403,26 +416,6 @@
     letter-spacing: 1px;
     color: var(--grey);
     margin-bottom: 7px;
-}
-
-.main-content main .records .upld-fle{
-    background: var(--violet);
-}
-
-.main-content main .records .upld-fle form .file{
-    color: var(--white);
-    font-size: 16px;
-}
-
-.main-content main .records .upld-fle ::-webkit-file-upload-button{
-    padding: 5px;
-    outline: none;
-    border: none;
-    background: var(--white);
-    border-radius: 5px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    margin-right: 20px;
 }
 
 .datas{
@@ -521,7 +514,9 @@
 
 .datas .data table tr th{
     padding: 8px 0;
-    color: var(--pink);
+    color: var(--white);
+    background: var(--vipi);
+    border: none;
 }
 
 .datas .data table tr td{

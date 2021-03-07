@@ -3,16 +3,12 @@
 :root{
     --white: #fff;
     --black: #444;
-    --grey: #919393;
     --green: #4caf50;
+    --red: #fd6159;
+    --grey: #919393;
     --pink: #e91e63;
-    --violet: #694caf;
-    --csv: #fd6159;
-    --sidenav: linear-gradient(87deg,#172b4d 0,#1a174dc7 100%);/*linear-gradient(87deg,#172b4d 0,#1a174d 100%) #e91e7c #d81b61f2*/
-    --rec: #20d5de;
     --dashboardbg: #f3f3f3;
-    --yellow: linear-gradient(60deg,#ffa726,#fb8c00);
-    --vipi: #9c27b0;
+    --vipi: linear-gradient(90deg,#0c2646 0,#204065 60%,#2a5788);/*linear-gradient(-45deg, rgba(147,26,222,0.83) 0%, rgba(28,206,234,0.82) 100%);*//*#9c27b0*/
 }
 
 *{
@@ -28,7 +24,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    background: var(--sidenav);
+    background: var(--vipi);
     z-index: 100;
 }
 
@@ -319,7 +315,7 @@
 }
 
 .main-content header .right-menu ul li .profile .profile-list:hover{
-    background: var(--sidenav);
+    background: var(--vipi);
     color: var(--white);
 }
 

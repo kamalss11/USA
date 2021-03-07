@@ -30,3 +30,36 @@ pro.addEventListener('click',()=>{
         pro.classList.remove("open");
     }
 })
+
+//  clock
+
+function clock(){
+    let hours = document.getElementById("hours");
+    let minutes = document.getElementById("minutes");
+    let seconds = document.getElementById("seconds");
+    let ampm = document.querySelector(".ampm");
+
+    let h = new Date().getHours();
+    let m = new Date().getMinutes();
+    let s = new Date().getSeconds();
+    var am = 'AM';
+    
+    //  convert 24 hour format to 12 hour format with am/pm indicator
+    if(h>12){
+        h = h - 12;
+        var am = 'PM';
+    }
+
+    //  add 0 to the begining if hour < 10
+    h = (h < 10) ? '0' + h : h;
+    m = (m < 10) ? '0' + m : m;
+    s = (s < 10) ? '0' + s : s;
+
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    seconds.innerHTML = s;
+    ampm.innerHTML = am;
+
+}
+
+var interval = setInterval(clock, 1000);
